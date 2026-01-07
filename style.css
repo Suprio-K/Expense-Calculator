@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.income { color: green; }
+.expense { color: red; }
+.balance { color: blue; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filters {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background: #eee;
+}
+
+li.income { border-left: 5px solid green; }
+li.expense { border-left: 5px solid red; }
+
+.actions button {
+  margin-left: 5px;
+}
+
+@media (max-width: 480px) {
+  .summary {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+}
